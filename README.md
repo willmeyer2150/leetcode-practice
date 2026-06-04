@@ -9,7 +9,7 @@ Goal:
 
 | # | Problem | Difficulty | Status |
 |---|----------|------------|---------|
-| 88 | Merge Sorted Array | Easy | ✅ |
+| 88 | Merge Sorted Array | Easy | Completed June 04th, 2026 |
 
 # Starting a New LeetCode Problem
 
