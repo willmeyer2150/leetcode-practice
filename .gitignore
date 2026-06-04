@@ -1,0 +1,8 @@
+*.out
+*.exe
+.DS_Store
+.vscode/settings.json
+
+build/
+.DS_Store
+.vscode/settings.json
