@@ -10,6 +10,8 @@ Goal:
 | # | Problem | Difficulty | Status |
 |---|----------|------------|---------|
 | 88 | Merge Sorted Array | Easy | Completed June 04th, 2026 |
+| 27 | Remove Element | Easy | Completed June 05th, 2026 |
+| 13 | Roman to Integer | Easy | Completed June 07th, 2026 |
 
 # Starting a New LeetCode Problem
 
@@ -77,7 +79,7 @@ Use the playground for:
 Compile and run:
 
 ```bash
-g++ playground/main.cpp -o build/test
+g++ testing_ground/main.cpp -o build/test
 ./build/test
 ```
 

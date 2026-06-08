@@ -17,15 +17,12 @@ int guess(int num) {
     }
 
     if (num < 6) {
-        std::cout << num << " is wrong! Try again!" << std::endl;
         return 1;
     }
 
     if (num > 6) {
-        std::cout << num << " is wrong! Try again!" << std::endl;
         return -1;
     }
-    return -1;
 }
 
 class Solution {
