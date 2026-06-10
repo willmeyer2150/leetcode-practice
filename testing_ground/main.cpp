@@ -1,67 +1,36 @@
 #include <iostream>
-
-/** 
- * Forward declaration of guess API.
- * @param  num   your guess
- * @return 	     -1 if num is higher than the picked number
- *			      1 if num is lower than the picked number
- *               otherwise return 0
- * int guess(int num);
- */
-
-int guess(int num) {
-    int secretNumber = 6;
-
-    if (num == 6) {
-        return 0;
-    }
-
-    if (num < 6) {
-        std::cout << num << " is wrong! Try again!" << std::endl;
-        return 1;
-    }
-
-    if (num > 6) {
-        std::cout << num << " is wrong! Try again!" << std::endl;
-        return -1;
-    }
-    return -1;
-}
+#include <vector>
 
 class Solution {
 public:
-    int guessNumber(int n) {
-        int left = 1;
-        int right = n;
+    int maxProfit(std::vector<int>& prices) {
+        int lowestPrice = prices[0];
+        int maxProfit = 0;
 
-
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            int possibleGuess = guess(mid);
-
-            if (possibleGuess == 0) {
-                return mid;
+        for (size_t i = 1; i < prices.size(); ++i) {
+            if (prices[i] < lowestPrice) {
+                lowestPrice = prices[i];
+                std::cout << "Lowest price: " << lowestPrice << std::endl;
             }
-            if (possibleGuess == 1) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
+            else if ((prices[i] - lowestPrice) > maxProfit) {
+                maxProfit = prices[i] - lowestPrice;
+                std::cout << "Max profit: " << maxProfit << std::endl;
             }
-
         }
-        return -1;
+        return maxProfit;
     }
 };
 
-void printGuess(int num) {
-    std::cout << num << " is the correct answer!" << std::endl;
+void printProfit(int profit) {
+    std::cout << "Your profit is " << profit << std::endl;
 }
 
 int main() {
     Solution sol;
 
-    int n = 10;
+    std::vector<int> prices = {7,1,5,3,6,4};
 
-    printGuess(sol.guessNumber(n));
+    int profit = sol.maxProfit(prices);
 
+    printProfit(profit);
 }
