@@ -13,7 +13,7 @@ For this problem, that approach is not required. A simple brute-force search is 
 
 ## Key Insight
 
-The key realization was thatthere are two different indices being tracked:
+The key realization was that there are two different indices being tracked:
 
 - i represents a possible starting position in haystack.
 - j represents the current character being checked in needle.
