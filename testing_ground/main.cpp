@@ -1,33 +1,69 @@
 #include <iostream>
 #include <vector>
+#include <string>
+#include <unordered_map>
 
-class Solution {
+using namespace std;
+
+class BFSolution {
 public:
-    void moveZeroes(std::vector<int>& nums) {
-        int insertPos = 0;
+    vector<int> twoSum(vector<int>& nums, int target) {
+        std::vector<int> solution;
+        int n = nums.size();
 
-        for (int i = 0; i < nums.size(); ++i) {
-            int temp = nums[i];
-            if (nums[i] != 0) {
-                nums[i] = nums[insertPos];
-                nums[insertPos] = temp;
-                insertPos++;
+        for (int i = 0; i < n; ++i) {
+            for (int j = i + 1; j < n; ++j) {
+                if (nums[i] + nums[j] == target) {
+                    solution = {i, j};
+                    return solution;
+                }
             }
         }
+        return {};
     }
 };
 
-void printVector(const std::vector<int>& nums) {
-    for (int i = 0; i < nums.size(); ++i) {
-        std::cout << nums[i] << std::endl;
+class OPSolution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        std::unordered_map<int, int> seen;
+        int n = nums.size();
+        int needed = 0;
+
+        for (int i = 0; i < n; ++i) {
+            seen[nums[i]] = i;
+        }
+
+        for (int i = 0; i < n; ++i) {
+            needed = target - nums[i];
+            
+            if (seen.find(needed) != seen.end()) {
+                return {seen[needed], i};
+            }
+            seen[nums[i]] = i;
+        }
+        return {};
     }
+};
+
+
+template <typename T>
+
+void printVector(const vector<T>& vec) {
+    for (const auto& item : vec) {
+        cout << item << " ";
+    }
+    cout << endl;
 }
 
 int main() {
-    Solution sol;
+    OPSolution sol;
 
-    std::vector<int> nums = {0,1,0,3,12};
-    sol.moveZeroes(nums);
+    std::vector<int> nums = {2,7,11,15};
 
-    printVector(nums);
+    std::vector<int> answer = sol.twoSum(nums, 9);
+
+    printVector(answer);
+
+    return 0;
 }

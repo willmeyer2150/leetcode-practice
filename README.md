@@ -41,7 +41,7 @@ mkdir easy/0027-remove-element
 
 ## 2. Copy the Templates
 
-Copy the solution and notes templates into the new folder:
+From the root directory, copy the solution and notes templates into the new folder:
 
 ```bash
 cp templates/solution_template.cpp \
