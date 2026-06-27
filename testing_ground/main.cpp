@@ -31,10 +31,6 @@ public:
         int needed = 0;
 
         for (int i = 0; i < n; ++i) {
-            seen[nums[i]] = i;
-        }
-
-        for (int i = 0; i < n; ++i) {
             needed = target - nums[i];
             
             if (seen.find(needed) != seen.end()) {
