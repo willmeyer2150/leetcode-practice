@@ -5,13 +5,21 @@ Goal:
 - Build problem-solving skills for software engineering interviews
 - Track progress publicly on GitHub
 
+---
+
 ## Progress
 
 | # | Problem | Difficulty | Status |
 |---|----------|------------|---------|
-| 88 | Merge Sorted Array | Easy | Completed June 04th, 2026 |
-| 27 | Remove Element | Easy | Completed June 05th, 2026 |
-| 13 | Roman to Integer | Easy | Completed June 07th, 2026 |
+| 13 | Roman to Integer | Easy | ✅ Completed June 07, 2026 |
+| 27 | Remove Element | Easy | ✅ Completed June 05, 2026 |
+| 28 | Find the Index of the First Occurrence in a String | Easy | ✅ Completed June 24, 2026 |
+| 88 | Merge Sorted Array | Easy | ✅ Completed June 04, 2026 |
+| 121 | Best Time to Buy and Sell Stock | Easy | ✅ Completed June 09, 2026 |
+| 283 | Move Zeroes | Easy | ✅ Completed June 26, 2026 |
+| 374 | Guess Number Higher or Lower | Easy | ✅ Completed June 08, 2026 |
+
+---
 
 # Starting a New LeetCode Problem
 
