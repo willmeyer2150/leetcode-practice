@@ -34,7 +34,7 @@ int main() {
 
     std::vector<int> nums = {2,7,11,15};
 
-    sol.twoSum(nums);
+    sol.twoSum(nums, 9);
 
     printVector(nums);
 
