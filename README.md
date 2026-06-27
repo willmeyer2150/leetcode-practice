@@ -18,6 +18,7 @@ Goal:
 | 121 | Best Time to Buy and Sell Stock | Easy | ✅ Completed June 09, 2026 |
 | 283 | Move Zeroes | Easy | ✅ Completed June 26, 2026 |
 | 374 | Guess Number Higher or Lower | Easy | ✅ Completed June 08, 2026 |
+| 001 | Two Sum | Easy | ✅ Completed June 27, 2026 |
 
 ---
 
