@@ -19,6 +19,7 @@ Goal:
 | 283 | Move Zeroes | Easy | ✅ Completed June 26, 2026 |
 | 374 | Guess Number Higher or Lower | Easy | ✅ Completed June 08, 2026 |
 | 001 | Two Sum | Easy | ✅ Completed June 27, 2026 |
+| 35 | Search Insert Position | Easy | ✅ Completed July 12, 2026 |
 
 ---
 
